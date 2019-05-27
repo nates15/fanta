@@ -1,115 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <style type="text/css">
-         html {
-         overflow:hidden;
-         }
-      </style>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>nate's discord selfbot</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="theme-color" content="#000000">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" type="image/x-icon" href="./favicon_pink.png">
-      <link rel="stylesheet" href="./assets/bootstrap.min.css">
-      <link rel="stylesheet" href="./assets/averion.min.css">
-      <script src="https://use.fontawesome.com/a5e30dd034.js"></script>
-      <link rel="stylesheet" href="./assets/animate.min.css">
-      <link rel="stylesheet" type="text/css" href="./assets/star-animation.css">
-      <link rel="stylesheet" href="./assets/stylez.css">
-      <link rel="stylesheet" href="./assets/gallery.css">
-      <div class="bg-animation">
-         <div id="stars"></div>
-         <div id="stars2"></div>
-         <div id="stars3"></div>
-         <div id="stars4"></div>
-      </div>
-      <script>
-         document.onkeypress = function (event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-               //alert('No F-12');
-                return false;
-            }
-         }
-         document.onmousedown = function (event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-                //alert('No F-keys');
-                return false;
-            }
-         }
-         document.onkeydown = function (event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-                //alert('No F-keys');
-                return false;
-            }
-         }
-      </script>
-      <script>document.addEventListener("contextmenu", function(e){
-         e.preventDefault();
-         }, false);
-      </script>
-      <div class="overlay">
-         <marquee bgcolor="black" height="60" scrollamount="35">                                                                                                                              </marquee>
-      </div>
-   </head>
-   <body>
-      <div class="container" style="height: 100%; display: flex; align-items: center; margin: 0 auto; padding-top: 3rem;">
-      <main>
-         <div class="animated fadeInUp delay-250">
-            <div class="japanese">
-               <p><font size ="2000" class="japanese"></font></p>
-            </div>
-         </div>
-         <div class="animated fadeInUp">
-            <H1>
-               Nate's Selfbot
-            </H1>
-         </div>
-         <p>
-         <div class="animated fadeInUp"></div>
-         <font face="courier"></a>
-         <div class="animated fadeInUp">
-            <div id="time"> 18:21:25</div>
-         </div>
-         <div class="animated fadeInUp">
-            <div id="date">sunday, february 5</div>
-         </div>
-         <div class="animated fadeInUp"></div>
-         <div class="container">
-         </p>
-         <center>
-            <div class="animated fadeInUp">
-               <p><font size="2">built by nate</font></p>
-               <!--<marquee width="30%" class="japanese2">-->
-               <i class="japanese2">
-               <a href="https://discord.gg/RbHTAh2" target="_blank">support</a> / <a href="https://ogusers.com/Thread-50-OFF-LIFETIME-UPDATES-❤️-Discord-Selfbot-❤️-GOOD-SUPPORT" target="_blank">buy</a><br>
-                 Status: <font color="#00FF00">Online</font>
-               </i>
-               <!--</marquee>-->
-            </div>
-         </center>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
 
-         <footer>
-         </footer>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="Nate's website for discord bots!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <video autoplay loop id="player" controls>
-            <source src="./img/video.mp4" type="video/mp4">
-         </video>
-         <script>
-            var x = document.getElementById("player").volume = 0.2;
-         </script>
-         <script src="./assets/main.js.download"></script>
+<link rel="icon" href="assets/img/favicon/144x144.png">
 
-      </main>
-      <div id="info">
-         <marquee bgcolor="black" height="60" scrollamount="35">
-         <p>
-         <p>
-         <div class="japanese3"></div>
-      </div>
-   </body>
+<title>Nate's Website</title>
+
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700%7COpen+Sans:400,600,700" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/vendor/strokegap/style.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+
+<link rel="stylesheet" href="assets/css/bundle.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="theme-color" content="#00aeef">
+<meta property="og:title" content="Nate's Website">
+<meta property="og:image" href="assets/img/favicon/288x288.png">
+<meta property="og:description" content="ogu: nates, discord: nate#5553">
+<meta name="twitter:card" value="summary">
+<meta name="twitter:title" content="Nate's Website">
+<meta name="twitter:description" content="ogu: nates, discord: nate#5553">
+<meta name="twitter:image" content="assets/img/favicon/288x288.png">
+</head>
+<body id="top">
+<header class="header header-shrink header-inverse fixed-top">
+<div class="container">
+<nav class="navbar navbar-expand-lg px-md-0">
+
+</a>
+<button class="navbar-toggler p-0" data-toggle="collapse" data-target="#navbarNav">
+<div class="hamburger hamburger--spin js-hamburger">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</div>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://discord.gg/CJGUcUt" target="_blank">
+Discord
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div> 
+</header> 
+<section class="u-py-100 u-h-100vh u-flex-center" style="
+	background: #00aeef;
+	background-image: -webkit-linear-gradient(left, #00aeef 0%, #2e3192 100%);
+	background-image: -o-linear-gradient(left, #00aeef 0%, #2e3192 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#00aeef), to(#2e3192));
+	background-image: linear-gradient(to right, #00aeef 0%, #2e3192 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00aeef', endColorstr='#FF2e3192', GradientType=1);
+ ">
+<div class="container">
+<div class="row">
+<div class="col-12 u-mt-80 text-center">
+<h1 class="display-4 u-fw-600 text-white u-mb-40">
+Contact Me 	<br>
+<span class="text-yellow" data-type="ogu: nates, discord: nate#5553"></span>
+<span class="typed-curcor text-yellow">|</span><br>
+ </h1>
+<p class="u-fs-22 text-white u-lh-1_8 u-mb-40">
+Come get your discord bot!
+</p>
+<a href="https://ogusers.com/Thread-Custom-Discord-Bots-Shop-2-SOLD" class="btn btn-rounded btn-yellow m-2 px-md-5 py-3">
+Custom Bot
+</a>
+<a href="https://ogusers.com/Thread-50-OFF-LIFETIME-UPDATES-%E2%9D%A4%EF%B8%8F-Discord-Selfbot-%E2%9D%A4%EF%B8%8F-GOOD-SUPPORT" class="btn btn-rounded btn-white m-2 px-md-5 py-3">
+ Selfbot
+</a>
+</div> 
+</div> 
+
+</div> 
+</section> 
+<section class="bg-gray-v2 u-pb-80">
+<div class="container">
+<div class="row">
+<div class="col-12 u-mb-70">
+<h2 class="h1 text-primary text-center">
+Features
+</h2>
+</div>
+<div class="col-lg-4 col-md-6 u-mb-70">
+<div class="media">
+<span class="icon icon-Heart text-primary u-fs-42 mr-4"></span>
+<div class="media-body">
+<h4 class="mb-4">
+Made with ❤️
+</h4>
+<p>
+The bots we make are made with love. We listen to our customers and try to implement what they would like.
+</p>
+<p>
+</p>
+</div>
+</div>
+</div> 
+<div class="col-lg-4 col-md-6 u-mb-70">
+<div class="media">
+<span class="icon icon-Bulb text-primary u-fs-42 mr-4"></span>
+<div class="media-body">
+<h4 class="mb-4">
+Easy to use
+</h4>
+<p>
+The bots that I make are easy to use and feature-rich. If you have any recommendations message me on discord at nate#5553.
+</p>
+<p>
+</p>
+</div>
+</div>
+</div> 
+<div class="col-lg-4 col-md-6 u-mb-70">
+<div class="media">
+<span class="icon icon-Dollars text-primary u-fs-42 mr-4"></span>
+<div class="media-body">
+<h4 class="mb-4">
+Pricing
+</h4>
+<p>
+The currencies I accept are as follows:
+</p>
+<p>
+Bitcoin, PayPal, and Ethereum
+</p>
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</section>
+<section id="features">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 my-4">
+<img src="assets/img/stats.png" alt="">
+</div> 
+<div class="col-lg-5 ml-auto mt-5 mb-4">
+<h2 class="u-mb-30">
+Awesome Commands
+</h2>
+<p>
+There are some helpful commands to use on the go!
+</p>
+<p>
+This command was <code>.stats</code> to display the user's stats.
+</p>
+</div> 
+</div> 
+<hr class="u-my-60">
+<div class="row align-items-center">
+<div class="col-lg-6 my-4 order-2 order-lg-1">
+<h2 class="u-mb-30">
+Check Bitcoin prices on the go
+</h2>
+<p>
+You can check bitcoin prices on the go with the command <code>.btc</code>
+</p>
+</div> 
+<div class="col-lg-5 ml-auto mt-5 mb-4 order-1 order-lg-2">
+<img src="assets/img/btc.png" alt="">
+</div> 
+</div> 
+<hr class="u-my-60">
+</div> 
+</section>
+<section id="invite" class="bg-gray-v2">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h2 class="h1">
+Purchase this now<span class="text-primary"> for your server</span>
+</h2>
+<div class="u-h-4 u-w-50 bg-primary rounded mt-4 mb-5"></div>
+<div class="media mt-4">
+<span class="icon icon-PowerOff text-primary u-fs-28 mr-3 mt-2"></span>
+<div class="media-body">
+<h4 class="h5">
+Simple to use
+</h4>
+<p>
+My custom bots are simple to use and look very clean.
+</p>
+<a href="https://ogusers.com/Thread-Custom-Discord-Bots-Shop-2-SOLD" class="btn btn-sm btn-primary btn-rounded" target="_blank">Purchase</a>
+</div>
+</div>
+<div class="media mt-4">
+<span class="icon icon-Settings text-primary u-fs-28 mr-3 mt-2"></span>
+<div class="media-body">
+<h4 class="h5">
+Set up
+</h4>
+<p>
+The bots I make are very easy to set up and I will help you set them up if you need help.
+</p>
+<p>
+</p>
+<a href="https://discord.gg/CJGUcUt" class="btn btn-sm btn-white btn-rounded" target="_blank">Join the Support server</a>
+</div>
+</div>
+</div> 
+<div class="col-lg-5 ml-auto text-center">
+<img class="wow fadeInRight w-100 rounded" src="assets/img/example.png" alt="">
+</div> 
+</div> 
+</div> 
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-lg-6 m-auto text-center">
+<h2 class="h1">
+Frequently Asked Questions
+</h2>
+<div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+</div>
+</div> 
+<div class="row">
+<div class="col-12 mt-4">
+<div id="accordion" role="tablist" class="bg-white box-shadow-v3">
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#what_is_money">
+<i class="fa fa-angle-down mr-3"></i>
+What is a selfbot?
+</a>
+<div id="what_is_money" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+A <b>selfbot</b> is a discord bot that will act on your behalf! The <b>selfbot</b> will only respond to you and not anyone else.
+</div>
+</div> 
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#fiat">
+<i class="fa fa-angle-down mr-3"></i>
+Is this against Discord TOS?
+</a>
+<div id="fiat" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+Yes, but the chances of you reviecing a ban are very low. If you do not use the spam or everyone command you should be fine.
+</div>
+</div>
+</div> 
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#exchanging">
+<i class="fa fa-angle-down mr-3"></i>
+How much do the custom bots cost?
+</a>
+<div id="exchanging" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+The custom bots can cost anywhere from $10 and up. It depends on the features of the bot and how much you want implemented.
+</div>
+</div>
+</div> 
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#balance">
+<i class="fa fa-angle-down mr-3"></i>
+How do I purchase the selfbot?
+</a>
+<div id="balance" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+To purchase the selfbot message me on discord. nate#5553
+</div>
+</div>
+</div> 
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#account_deletion">
+<i class="fa fa-angle-down mr-3"></i>
+Is the selfbot worth it?
+</a>
+<div id="account_deletion" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+Yes, we have had many happy customers.
+</div>
+</div>
+</div> 
+<div class="accordion__faq">
+<a class="accordion__title p-4" data-toggle="collapse" href="#are_my_funds_safe">
+<i class="fa fa-angle-down mr-3"></i>
+What payments do you accept?
+</a>
+<div id="are_my_funds_safe" class="collapse" role="tabpanel" data-parent="#accordion">
+<div class="accordion__text">
+We only accept Bitcoin, PayPal, and Ethereum.
+</div>
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+<section class="u-py-100" style="
+  background: #00aeef;
+  background-image: -webkit-linear-gradient(left, #00aeef 0%, #2e3192 100%);
+  background-image: -o-linear-gradient(left, #00aeef 0%, #2e3192 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#00aeef), to(#2e3192));
+  background-image: linear-gradient(to right, #00aeef 0%, #2e3192 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00aeef', endColorstr='#FF2e3192', GradientType=1);
+">
+<div class="container">
+<div class="row text-center">
+<div class="col-lg-6 mx-auto mt-5 text-white">
+<p class="u-fs-20">
+Got any more questions?
+</p>
+<h2 class="h1 text-white my-4">
+Join our <span class="text-yellow">Support server</span>
+</h2>
+<a href="https://discord.gg/CJGUcUt" target="_blank" class="btn btn btn-rounded btn-yellow m-2 px-md-5 py-3">
+Join on Discord
+</a>
+
+</div> 
+</div> 
+</div> 
+</section>
+
+<div class="scroll-top bg-white box-shadow-v1">
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/fury.js"></script>
+</body>
 </html>
